@@ -14,7 +14,13 @@ The code works for varient of MNIST and task incremental version of CIFAR100 and
 
 CIFAR100 is automatically downloaded when you run a script for CIFAR experiments.
 
-Instructions about TinyImageNet coming soon!
+For TinyImageNet, first give the correct permissions to the download script:
+
+```chmod +x download_tinyimgnet.sh```
+
+Then, run the following commands to download and process the data for use by Pytorch Dataloader:
+
+```./download_tinyimgnet.sh```
 
 ## Basic Setup
 
@@ -55,14 +61,13 @@ In run_experiments.sh see examples of how to run variants of la_maml from the pa
 
 ```chmod +x run_experiments.sh```
 
-Finally you can run all the experiments using the following command
+Finally, you can run all the experiments using the following command:
 
 ```
 ./run_experiments.sh
 ```
 It is also possible to run a single algorithm at once. For that look into the run_experiments.sh file to access the arguments and hyperparams required for a particular algorithm.
 
-Instructions about TinyImageNet coming soon!
 
 ## Results
 
